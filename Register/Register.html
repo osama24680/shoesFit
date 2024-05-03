@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- font awesome library for icons -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <title>ShoesFit</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">ShoesFit</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item me-3">
+              <a class="nav-link homeNav" aria-current="page" href="/index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link ServicesNav" href="/servicse/services.html">Services</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link AboutNav" href="/About/About.html">About</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link ProductsNav" href="/products/products.html">Products</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link DoctorsNav" href="/doctors/doctors.html">Doctors</a>
+            </li>
+            <div class="regLog">
+              <li class="nav-item me-3">
+                <a class="nav-link" href="/login/login.html">Login</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="/Register/Register.html">Register</a>
+              </li>
+            </div>
+            <li class="nav-item me-3">
+              <p class="nav-link welcomeUser" href="/"></p>
+            </li>
+            <li class="nav-item me-3">
+              <p class="nav-link logout" href="/">Logout</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="body">
+      <div class="container">
+        <input type="checkbox" id="flip" />
+        <div class="cover">
+          <div class="front">
+            <img src="../images/frontImg.jpg" alt="" />
+            <div class="text">
+              <span class="text-1"
+                >Every new friend is a <br />
+                new adventure</span
+              >
+              <span class="text-2">Let's get connected</span>
+            </div>
+          </div>
+          <div class="back">
+            <img class="backImg" src="../images/backImg.jpg" alt="" />
+            <div class="text">
+              <span class="text-1"
+                >Complete miles of journey <br />
+                with one step</span
+              >
+              <span class="text-2">Let's get started</span>
+            </div>
+          </div>
+        </div>
+        <div class="forms">
+          <div class="form-content">
+            <div class="login-form">
+              <div class="title">Patients Register</div>
+              <form action="#">
+                <div class="input-boxes">
+                  <div class="input-box">
+                    <i class="fas fa-user"></i>
+                    <input
+                      type="text"
+                      placeholder="Enter your name"
+                      required
+                      required
+                      class="regPaName"
+                    />
+                  </div>
+                  <p class="regPaNameError">Enter a valid name</p>
+                  <div class="input-box">
+                    <i class="fas fa-envelope"></i>
+                    <input
+                      type="text"
+                      placeholder="Enter your email"
+                      required
+                      class="regPaMail"
+                    />
+                  </div>
+                  <p class="regPaMailError">Enter a valid E-mail</p>
+                  <div class="input-box">
+                    <i class="fas fa-lock"></i>
+                    <input
+                      type="password"
+                      placeholder="Enter your password"
+                      required
+                      class="regPaPassword"
+                    />
+                    <div class="passwordEye">
+                      <i class="fa-solid fa-eye"></i>
+                    </div>
+                  </div>
+                  <p class="regPaPasswordError">
+                    <strong>Enter a strong password</strong> <br />Password
+                    should be 8 character minimum <br />At least 3 capital
+                    letters <br />At least 3 lower letters <br />At least 1
+                    special character
+                  </p>
+                  <div class="button input-box">
+                    <input
+                      id="onSubmitRegisterPatients"
+                      type="submit"
+                      value="Sumbit"
+                    />
+                  </div>
+                  <button id="checkSubmit">check</button>
+                  <p class="goToLoginPage">
+                    Congratulations!!
+                    <a href="../login/login.html">Go To Login Page</a>
+                  </p>
+                  <div class="text sign-up-text">
+                    You are not a patient?
+                    <label for="flip">Register for Doctors</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+
+
+
+
+            
+
+            <div class="signup-form">
+              <div class="title">Doctors Register</div>
+              <form action="#">
+                <div class="input-boxes">
+                  <div class="input-box">
+                    <i class="fas fa-user"></i>
+                    <input
+                      type="text"
+                      placeholder="Enter your name"
+                      required
+                      class="regDoctorName"
+                    />
+                  </div>
+                  <p class="regDoctorNameError">Enter a valid name</p>
+
+                  <div class="input-box">
+                    <i class="fa-solid fa-user-doctor"></i>
+                    <input
+                      type="text"
+                      placeholder="Enter your specialization"
+                      required
+                      class="regDoctorSpecialization"
+                    />
+                  </div>
+                  <p class="regDoctorSpecializationError">
+                    Enter a valid specialization
+                  </p>
+
+                  <div class="input-box">
+                    <i class="fas fa-envelope"></i>
+                    <input
+                      type="text"
+                      placeholder="Enter your email"
+                      required
+                      class="regDoctorMail"
+                    />
+                  </div>
+                  <p class="regDoctorMailError">Enter a valid E-mail</p>
+
+                  <div class="input-box">
+                    <i class="fas fa-lock"></i>
+                    <input
+                      type="password"
+                      placeholder="Enter your password"
+                      required
+                      class="regDoctorPassword"
+                    />
+                    <div class="passwordEyeLogin">
+                      <i class="fa-solid fa-eye"></i>
+                    </div>
+                  </div>
+                  <p class="regDoctorOasswordError">Enter a valid Password</p>
+                  <div class="button input-box">
+                    <input
+                      id="onSubmitRegisterDoctors"
+                      type="submit"
+                      value="Sumbit"
+                    />
+                  </div>
+                  <p class="goToLoginPage">
+                    Congratulations!!
+                    <a href="../login/login.html">Go To Login Page</a>
+                  </p>
+                  <div class="text sign-up-text">
+                    You are not a patient?
+                    <label for="flip">Register for Patients</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../register.js"></script>
+    <script src="../index.js"></script>
+  </body>
+</html>
