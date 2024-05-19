@@ -7,6 +7,7 @@ let ServicesNav = document.querySelector(".ServicesNav");
 let AboutNav = document.querySelector(".AboutNav");
 let ProductsNav = document.querySelector(".ProductsNav");
 let DoctorsNav = document.querySelector(".DoctorsNav");
+let DataNav = document.querySelector(".DataNav");
 
 let navElements = [homeNav, ServicesNav, AboutNav, ProductsNav];
 
@@ -24,6 +25,7 @@ if (localStorage.getItem("username")) {
   });
   logout.style.display = "none";
   DoctorsNav.style.display = "none";
+  DataNav.style.display = "none";
 }
 
 logout.addEventListener("click", function () {
@@ -40,6 +42,9 @@ logout.addEventListener("click", function () {
 
 if (localStorage.getItem("specialisation") === "undefined" || localStorage.getItem("specialisation")===null) {
   DoctorsNav.style.display = "none";
+  DataNav.style.display = "block";
 } else {
   DoctorsNav.style.display = "block";
+  DataNav.style.display = "none";
 }
+

@@ -14,7 +14,7 @@
   box-sizing: border-box;
   outline: none;
   border: none;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   transition: all 0.2s ease-out;
   text-decoration: none;
 }
@@ -580,6 +580,9 @@ section:nth-child(even) {
   background: #a0cbc3;
   padding: 30px;
 }
+.registerBox{
+  margin-top: 40px;
+}
 .container {
   position: relative;
   max-width: 850px;
@@ -729,12 +732,13 @@ section:nth-child(even) {
   display: none;
 }
 
-.passwordEye {
+.passwordEye,.passwordEyeLogin {
   position: absolute;
   right: 7%;
   top: 30%;
   cursor: pointer;
 }
+
 .unFoundEmail {
   color: red !important;
   margin-top: 10px;
@@ -936,6 +940,7 @@ label {
 /* ***********************************History******************************* */
 .history {
   width: 100%;
+  margin: 50px auto;
 }
 
 .history h2,
@@ -949,7 +954,7 @@ label {
 .history h2::after,
 .leaders h2::after {
   content: "";
-  width: 175px;
+  width: 70px;
   height: 3px;
   background-color: #000;
   position: absolute;
@@ -961,24 +966,32 @@ label {
 .history p {
   font-size: 14px;
   font-weight: normal;
+  line-height:  2.5 ;
+  
 }
-
 .leadersImages {
   display: flex;
   justify-content: flex-start;
   gap: 30px;
   flex-wrap: wrap;
+  margin-top: 30px;
+ 
 }
 .leadersImages_image {
   width: 23%;
+
 }
 
 .leadersImages_image img {
   width: 100%;
-  filter: grayscale(1);
+  transform: scale(1);
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* height: 500px; */
 }
 .leadersImages_image img:hover {
-  filter: grayscale(0);
+  transform: scale(1.05);
+  cursor: pointer;
 }
 .leadersImages_image_text {
   margin-top: 2rem !important;
@@ -1064,7 +1077,8 @@ label {
 .tableDoctors {
   font-size: 18px;
   width: 80%;
-  margin: 90px auto;
+  margin: 160px auto 90px auto;
+  text-align: center;
 }
 table tbody tr {
   text-align: center;
@@ -1074,6 +1088,7 @@ table tbody tr th {
 }
 table tbody tr td img {
   width: 70px;
+  border-radius: 10%;
 }
 .callBtn,
 .details {
@@ -1261,6 +1276,6 @@ input[type="number"] {
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
 }
 
-#onSubmitRegisterPatients{
+/* #onSubmitRegisterPatients{
 display: none;
-}
+} */

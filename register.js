@@ -4,7 +4,7 @@ let regPaPasswordError = document.querySelector(".regPaPasswordError");
 let regPaName = document.querySelector(".regPaName");
 let regPaMail = document.querySelector(".regPaMail");
 let regPaPassword = document.querySelector(".regPaPassword");
-let onSubmitRegisterPatients = document.getElementById(
+let onSubmitRegister_Patients = document.getElementById(
   "onSubmitRegisterPatients"
 );
 
@@ -58,7 +58,7 @@ if (localStorage.getItem("localUsers") == null) {
 
 // * ####################Register#######################
 
-checkSubmit.addEventListener("click", function (e) {
+onSubmitRegister_Patients.addEventListener("click", function (e) {
   e.preventDefault();
 
   let signEmailFound = 0;
@@ -108,22 +108,30 @@ checkSubmit.addEventListener("click", function (e) {
     };
     allUsers.push(userSignData);
     localStorage.setItem("localUsers", JSON.stringify(allUsers));
-  
-  
 
-    onSubmitRegisterPatients.style.display = "block";
 
-    goToLoginPage.style.display = "block";
+    // goToLoginPage.style.display = "block";
+    window.location.href = "../login/login.html";
    
   } else {
-    goToLoginPage.style.display = "none";
-    onSubmitRegisterPatients.style.display = "none";
+    goToLoginPage.style.display = "block";
+    onSubmitRegister_Patients.style.display = "block";
+    window.location.href = "./Register.html";
   }
   signEmailFound = 0;
+
+
+
+
+
 });
 
 
-onSubmitRegisterPatients.addEventListener("click",function(){
+
+
+
+
+onSubmitRegister_Patients.addEventListener("click",function(){
   window.location.href = "../login/login.html";
   console.log("osama")
   

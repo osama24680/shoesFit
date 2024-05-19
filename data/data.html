@@ -43,26 +43,20 @@
               >
             </li>
             <li class="nav-item me-3">
-              <a class="nav-link ServicesNav" href="/servicse/services.html"
-                >Services</a
-              >
+              <a class="nav-link ServicesNav" href="/servicse/services.html">Services</a>
             </li>
             <li class="nav-item me-3">
               <a class="nav-link AboutNav" href="/About/About.html">About</a>
             </li>
             <li class="nav-item me-3">
-              <a class="nav-link ProductsNav" href="/products/products.html"
-                >Products</a
-              >
+              <a class="nav-link ProductsNav" href="/products/products.html">Products</a>
             </li>
             <li class="nav-item me-3">
-              <a class="nav-link DoctorsNav" href="/doctors/doctors.html"
-                >Doctors</a
-              >
+              <a class="nav-link DoctorsNav" href="/doctors/doctors.html">Doctors</a>
             </li>
             <li class="nav-item me-3">
-              <a class="nav-link DataNav" href="/data/data.html">Data</a>
-            </li>
+                <a class="nav-link DataNav" href="/data/data.html">Data</a>
+              </li>
             <div class="regLog">
               <li class="nav-item me-3">
                 <a class="nav-link" href="/login/login.html">Login</a>
@@ -82,78 +76,41 @@
       </div>
     </nav>
 
-    <section class="about" id="about">
-      <h1 class="heading"><span>about</span> us</h1>
 
-      <div class="row">
-        <div class="image">
-          <video controls>
-            <source src="../images/about.mp4" type="video/mp4" />
-          </video>
-        </div>
-
-        <div class="content">
-          <h3>Who We Are</h3>
-          <p>
-            We are the most trusted content company at the Point of Care,
-            offering authentic, high-quality content built from experience and
-            credibility. We offer scale and flexibility to effectively drive
-            growth.
-          </p>
-          <h3>Reach where it matters most</h3>
-          <ul>
-            <li>
-              450,000+ physicians, specialists, and healthcare professionals
-            </li>
-            <li>200,000+ medical offices</li>
-            <li>150 million+ condition sufferers and caregivers</li>
-            <li>10 million+ database of patients</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="history">
-      <h2>Brief</h2>
-      <p>
-        ShoesFit is at the forefront of innovative health technology,
-        revolutionizing the way we approach personal wellness. With a pioneering
-        spirit, ShoesFit has introduced a line of smart shoes that seamlessly
-        integrate AI technologies to monitor and enhance the wearer’s health.
-        These cutting-edge shoes are designed not only for comfort and style but
-        also to serve as a personal health assistant. By analyzing gait
-        patterns, foot pressure distribution, and other biomechanical data,
-        ShoesFit’s smart shoes provide valuable insights into the user’s health
-        status and offer tailored advice for improving posture, performance, and
-        overall well-being. Whether you’re an athlete looking to optimize your
-        training or simply someone who wants to keep a vigilant eye on your
-        health metrics, ShoesFit empowers you to take a step in the right
-        direction towards a healthier lifestyle. 🏃‍♂️👟✨
-      </p>
+    <table class="table  table-hover table-bordered border-primary tableDoctors ">
+      <thead>
+        <tr>
+          <th scope="col">Image</th>
+          <th scope="col">Patient Name</th>
+          <th scope="col">Heart Rate</th>
+          <th scope="col">Blood Oxygen</th>
+          <th scope="col">Temperature</th>
+          <th scope="col">Speed</th>
+          <th scope="col">Acceleration</th>
+          <th scope="col">Action</th>
+          <th scope="col">Note</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="../images/osama.jpeg" alt="" /></td>
+          <td>Osama Megahed</td>
+          <td>90</td>
+          <td>120</td>
+          <td>70</td>
+          <td>30</td>
+          <td>38</td>
+          
+          <td>
+            <a href="../service/service.html" ><button class="callBtn" >Contact Us</button></a>
+          </td>
+          <td>A.R.P.M</td>
+        </tr>
   
-    </section>
-
-    <section class="leaders">
-      <h2>Our Leaders</h2>
-      <div class="leadersImages">
-        <div class="leadersImages_image">
-          <img src="../images/osama.jpg" />
-          <p class="leadersImages_image_text">Eng. Osama Megahed</p>
-        </div>
-        <div class="leadersImages_image">
-          <img src="../images/saif2.jpg" />
-          <p class="leadersImages_image_text">Eng. Saif Yasser</p>
-        </div>
-        <div class="leadersImages_image">
-          <img src="../images/atef2.jpg" />
-          <p class="leadersImages_image_text">Eng. Ahmed Atef</p>
-        </div>
-        <div class="leadersImages_image">
-          <img src="../images/samer.jpg" />
-          <p class="leadersImages_image_text">Eng. Ahmed Samer</p>
-        </div>
-      </div>
-    </section>
+     
+    
+      </tbody>
+    </table>
 
     <section class="footer" id="footer">
       <div class="box-container">
@@ -203,9 +160,8 @@
           <a href="https://www.facebook.com/profile.php?id=100010179812706">
             <i class="fab fa-facebook-f"></i> facebook
           </a>
-          <a href="https://github.com/osama24680">
-            <i class="fab fa-github"></i> github
-          </a>
+          <a href="https://github.com/osama24680"> <i class="fab fa-github"></i> github </a>
+          
         </div>
       </div>
 
@@ -219,6 +175,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="../data.js"></script>
     <script src="../index.js"></script>
   </body>
 </html>
